@@ -63,3 +63,9 @@ variable "asg_desired_capacity" {
   description = "Desired number of instances in the ASG"
   type        = number
 }
+
+variable "node_version" {
+  description = "Node version to run app"
+  type        = string
+  default     = "20.17.0"
+}

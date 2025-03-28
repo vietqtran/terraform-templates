@@ -13,6 +13,7 @@ resource "aws_launch_template" "app_launch_template" {
   user_data = base64encode(templatefile("${path.module}/user_data.sh", {
     github_repo_url = var.github_repo_url
     app_port        = var.app_port
+    node_version = var.node_version
   }))
 
   tag_specifications {

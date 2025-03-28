@@ -13,3 +13,4 @@ asg_max_size         = 5
 asg_desired_capacity = 2
 github_repo_url      = "https://github.com/repo"
 ssh_allowed_cidr     = ["0.0.0.0/0"]
+node_version         = "20.17.0"

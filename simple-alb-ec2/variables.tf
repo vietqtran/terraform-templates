@@ -87,3 +87,9 @@ variable "ssh_allowed_cidr" {
   type        = list(string)
   default     = ["0.0.0.0/0"]  # NOTE: For production, restrict this to your IP or VPN
 }
+
+variable "node_version" {
+  description = "Node version to run app"
+  type        = string
+  default     = "20.17.0"
+}
